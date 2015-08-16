@@ -13,6 +13,7 @@
     <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png"/>
 
     <!-- Harmony styles -->
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/main.css">
 
@@ -41,9 +42,10 @@
 </header>
 
 <div class="container">
-    <div class="row" style="margin-bottom: 10px;">
+    <div class="row" style="margin-bottom: 30px;">
         <div class="col-md-6">
-            <img src="/assets/img/video-screen.png" alt="Manifiesto Somos Pura vida" data-video="http://www.youtube.com/embed/xBeApsQLjDk?autoplay=1">
+            <img src="/assets/img/video-screen.png" alt="Manifiesto Somos Pura vida"
+                 data-video="http://www.youtube.com/embed/xBeApsQLjDk?autoplay=1">
         </div>
         <div class="col-md-6" style="text-align: center; color: white;">
             Enseñemosle al mundo de lo que es capaz Costa Rica
@@ -51,21 +53,20 @@
 
     </div>
     <div class="row">
-        <footer class="main-footer">
-            <div class="wc-container" style="text-align: center;">
+        <div style="text-align: center; ">
+            <a href="https://www.facebook.com/somospv" target="_blank" style="color: white;">
+                <i class="fa fa-facebook-official fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCAugrBKITgTDd6iP4J6njnw" target="_blank" style="color: white;">
+                <i class="fa fa-youtube fa-2x"></i>
+            </a>
+            <a href="mailto:hola@somospuravida.com?Subject=Hello"  style="color: white;">
+                <i class="fa fa-envelope-o fa-2x"></i>
+            </a>
+        </div>
 
-
-                <div>
-                    <a href="mailto:hola@somospuravida.comm?Subject=Hola" target="_top">hola@somospuravida.com</a>
-
-                    | <a href="https://www.facebook.com/somospv">Facebook</a>
-                </div>
-            </div>
-        </footer>
     </div>
 </div>
-
-
 
 
 <!-- {{ content }}-->
@@ -86,8 +87,8 @@
 
     window.onload = function () {
 
-        $('img').click(function(){
-            video = '<iframe style="width: 100%; height:255px; background-color:#E01F2C; " src="'+ $(this).attr('data-video') +'"></iframe>';
+        $('img').click(function () {
+            video = '<iframe style="width: 100%; height:311px; background-color:#E01F2C; " src="' + $(this).attr('data-video') + '"></iframe>';
             $(this).replaceWith(video);
         });
 
