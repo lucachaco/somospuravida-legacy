@@ -503,7 +503,7 @@ body.theme-base-01 {
 
 header.main-header { 
   padding: 1em 0;
-  @include MQ(M) { padding: 2em 0; }
+  @include MQ(M) { padding: 0 0; }
 }
 footer.main-footer {
   padding: 1em 0;
