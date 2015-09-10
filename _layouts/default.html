@@ -30,7 +30,25 @@
     <![endif]-->
 </head>
 <body class="{{ site.harmony.basetheme }}">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12" style="position: relative; ">
+            {% if site.lang == "es" %}
+            <a style="color: white;  float: right; " href="/en">Change to
+                English</a>
+
+            {% else if site.lang == "en" %}
+            <a style="color: white;  float: right;" href="/">Cambiar a
+                Español</a>
+
+            {% endif %}
+
+        </div>
+    </div>
+</div>
 <header class="main-header">
+
+
     <div class="wc-container">
         <a href="/">
             <img src="/assets/img/logo.gif" alt="{{ site.harmony.name }}"
@@ -42,7 +60,9 @@
 </header>
 
 <div class="container">
+
     <div class="row" style="margin-bottom: 30px;">
+
         <div class="col-md-6" style="margin-bottom: 20px; margin-top: 45px;">
             <img src="/assets/img/video-screen.jpg" alt="Manifiesto Somos Pura vida"
                  data-video="https://www.youtube.com/embed/YCNsE99G2uY?autoplay=1" style="cursor: pointer;">
@@ -50,21 +70,14 @@
         <div class="col-md-6" style=" color: white;">
             <div style="margin-bottom: 20px; text-align: center;">
             <span style="padding: 5px 5px 5px 5px;font-size: 22px; font-weight: 600;">
-                We Are
+                {% t content.we-are %}
             </span>
             </div>
             <p>
-                We Costa Ricans have the task to let the world know about our beautiful nation. What we did, what we are doing and what we are going to do!  Additionally, allow humanity to understand our precious way of living and experiencing a pure life. What we call in Spanish, PURA VIDA!  Pura Vida is more then a phrase and more then an attitude. Pura Vida is our essence, our soul and our identity. Is what we say when we greet. Is what we say when we farewell. Is what we wish to someone to have and is what we wish to someone to be. Pura Vida is what we are!
+                {% t content.testinomy %}
+
             </p>
 
-            <div style="margin-bottom: 20px; margin-top: 15px; text-align: center;">
-            <span style=" padding: 5px 5px 5px 5px;  font-size: 22px; font-weight: 600;">
-                Somos
-            </span>
-            </div>
-            <p>
-                Nosotros los costarricenses, tenemos la tarea de dar a conocer nuestra preciosa nación; ¡lo que hemos hecho, lo que estamos haciendo, y lo que haremos! Aún más, hacer que la humanidad conozca nuestra forma de vivir y experimentar una vida pura. Lo que llamamos el PURA VIDA; es más que una frase, más que una actitud. Es nuestra esencia, nuestra alma e identidad. Es lo que decimos para saludar y despedirnos. Es lo que deseamos a la gente, es lo que deseamos que la gente sea. ¡Pura Vida es lo que somos!
-            </p>
 
         </div>
 

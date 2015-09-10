@@ -164,10 +164,8 @@ a.default-anchor {
   
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  color: $base-08;
   &:hover, &:active, &:focus {
     @include transition(border-bottom-color .2s);
-    border-bottom-color: $base-08;
   }
 
 }
@@ -195,7 +193,6 @@ header.main-header, footer.main-footer {
 
 header.main-header {
   color: $base-00;
-  border-top: 5px $base-00 solid;
 
   h1, h2 { text-align: center; color: inherit;}
   a { 
@@ -681,6 +678,11 @@ p.post-meta {
   color: inherit;
 }
 
+a:hover, a:focus {
+  color:#ffffff;
+  border-bottom-color: green;
+  text-decoration: none;
+}
 /* --------------------------------
 
  Post footer
